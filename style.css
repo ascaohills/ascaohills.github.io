@@ -1,0 +1,702 @@
+* {
+  font-family: "Fira Sans", sans-serif;
+}
+
+/*body{
+  background-image: url(imagenes/Render_-_Exterior_-S29_20150129-ConvertImage.jpg);
+  background-size: cover;
+}*/
+
+/* -------GENERAL/ PAGINA INICIO-----------*/
+.eslogan {
+  height: 7vh;
+  width: 39%;
+  display: flex;
+  font-size: 18px;
+  position: absolute;
+  bottom: 50%;
+  background-color: #e51b23;
+  left: 1%;
+  justify-content: center;
+  align-content: center;
+  color: white;
+  flex-wrap: wrap;
+  z-index: 2;
+}
+h4 {
+  cursor: pointer;
+  font-weight: 600;
+}
+#opcion {
+  display: none;
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
+}
+.ordenador {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+li {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 80%;
+  justify-content: space-around;
+  justify-items: center;
+  align-items: center;
+  padding-top: 1%;
+}
+.foto_portada {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+}
+
+
+.logo {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contenedor {
+  height: 90vh;
+  width: 100%;
+  position: relative;
+}
+.portada {
+  height: 100%;
+  width: 100%;
+  filter: grayscale(100%);
+}
+img {
+  object-fit: cover;
+}
+.movil {
+  display: none;
+}
+/*****  INICIO FOTO GRANDE ****/
+.zoom {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.788);
+  position: absolute;
+  top: 10vh;
+  transition: 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  animation-name: apertura;
+  animation-duration: 2s;
+  margin-top: 2%;
+}
+.img_caja {
+  width: 40%;
+  height: 600px;
+}
+
+.foto {
+  height: 100%;
+  object-fit: scale-down;
+  display: flex;
+  max-width: 100%;
+}
+
+.next,
+.back {
+  font-size: 2em;
+  color: #000000;
+  position: absolute;
+  top: 40%;
+}
+.next {
+  right: 5%;
+}
+.back {
+  left: 5%;
+}
+/*****  FIN FOTO GRANDE ****/
+.opciones {
+  height: 86vh;
+  width: 100vw;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  transition: 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  animation-name: apertura;
+  animation-duration: 2s;
+  margin-top: 2%;
+}
+.cruz,
+.cruz_popUp {
+  display: flex;
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  font-size: 30px;
+  color: #e51b23;
+}
+.posicion {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.quienesSomos,
+.queOfrecemos,
+.contacto,
+.galeria {
+  width: 70%;
+  letter-spacing: 2px;
+  text-align: justify;
+  display: flex;
+  position: absolute;
+  right: 15vw;
+}
+
+.quienesSomos {
+  top: 26%;
+}
+.queOfrecemos {
+  top: 10%;
+}
+.queOfrecemos li {
+  display: flex;
+  flex-direction: column;
+}
+
+.queOfrecemos ul {
+  width: 80%;
+  justify-content: flex-end;
+}
+.contacto {
+  top: 20%;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.formularioContacto {
+  display: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+}
+.mapa {
+  position: absolute;
+  right: 25px;
+  top: -10px;
+  display: none;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+input,
+textarea {
+  height: 50%;
+  width: 50%;
+  height: 2vh;
+}
+textarea {
+  height: 20vh;
+}
+
+/*QUE OFRECEMOS*/
+
+.box1 {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  height: 45vh;
+}
+
+.box2 {
+  width: 30%;
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(229, 27, 35, 0.46);
+}
+
+.box3 {
+  height: 10vh;
+}
+.titbox {
+  font-size: 1.2em;
+  width: 100%;
+  height: 5vh;
+  text-align: center;
+  padding-top: 5%;
+  background-color: rgba(229, 27, 35, 0.2);
+}
+.precio {
+  font-weight: bolder;
+  width: 90%;
+  text-align: center;
+  font-size: 1.1em;
+  margin-top: 5%;
+}
+.txtbox {
+  text-align: center;
+  width: 94%;
+  margin-right: 2%;
+  margin-left: 2%;
+  margin-top: 10%;
+  font-size: 0.9em;
+  line-height: 1.4em;
+}
+.txtbox1 {
+  text-align: center;
+  width: 94%;
+  margin-right: 2%;
+  margin-left: 2%;
+  margin-top: 5%;
+  font-size: 0.9em;
+  line-height: 1.4em;
+}
+/***************+COOKIE**********************/
+
+.cookie {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  font-size: 13px;
+  position: fixed;
+  bottom: 0%;
+  background-color: rgba(255, 255, 255, 0.678);
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+p,
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  height: 100%;
+  width: 10%;
+}
+.p {
+  height: 100%;
+  width: 70%;
+  flex-wrap: wrap;
+}
+button {
+  height: 30px;
+  width: 70px;
+  border: 1px solid;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++TABLET++++++++++++++++++++++++++++++*/
+
+@media (max-width: 1024px) {
+  body {
+    
+  }
+  .cookie {
+    height: 30vh;
+    z-index: 2;
+    flex-direction: column;
+  }
+  .p {
+    margin-left: 5%;
+  }
+  #opcion {
+    display: none;
+  }
+  .ordenador {
+    display: none;
+  }
+  p,
+  ul,
+  li,
+  ol {
+    font-size: 13px;
+  }
+  .contenedor {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+  }
+  .movil {
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    z-index: 1;
+    flex-direction: column;
+    align-items: center;
+  }
+  .opciones_menu_ordenador {
+    width: 50%;
+    background-color: #e51b23;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 12px;
+    align-items: center;
+  }
+  .opciones_menu_ordenador:nth-child(1),
+  .opciones_menu_ordenador:nth-child(2),
+  .opciones_menu_ordenador:nth-child(3),
+  .opciones_menu_ordenador:nth-child(4),
+  .opciones_menu_ordenador:nth-child(5) {
+    height: calc(17.5% - 48px);
+  }
+  .logo {
+    height: 30%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .caja_menu_movil:hover {
+    background-color: rgba(255, 255, 255, 0.548);
+  }
+  .opciones {
+    z-index: 1;
+    height: 76.5vh;
+    top: 22vh;
+    background-color: rgb(255, 255, 255);
+    display: none;
+  }
+  .quienesSomos,
+  .queOfrecemos,
+  .contacto,
+  .galeria {
+    display: none;
+    width: 70%;
+    letter-spacing: 2px;
+    text-align: justify;
+    display: flex;
+    position: absolute;
+    right: 15vw;
+  }
+  .queOfrecemos {
+    top: 10%;
+    right: 13%;
+  }
+  input,
+  textarea {
+    background-color: rgba(255, 255, 255, 0.356);
+  }
+  .formularioContacto {
+    display: none;
+    height: 100%;
+    width: 100%;
+  }
+  .mapa {
+    position: absolute;
+    right: -36px;
+    top: 98px;
+    left: 59%;
+  }
+  iframe {
+    width: 100%;
+    height: 30vh;
+  }
+  .eslogan {
+    top: 1%;
+    background-color: #000000d3;
+    color: white;
+    width: 100%;
+    right: 0%;
+    left: 0%;
+  }
+  .box1 {
+    display: contents;
+  }
+  .box2 {
+    width: 55%;
+    margin-bottom: 3%;
+    padding-bottom: 3%;
+    margin-top: 5%;
+    margin-left: 24%;
+  }
+  .queOfrecemos {
+    top: 7%;
+    background-color: white;
+    padding-left: 16%;
+    padding-right: 14%;
+    left: 0%;
+  }
+  .fotos_casas {
+    margin-top: 7% !important;
+    margin-left: -22% !important;
+    background-color: white;
+    margin-right: -21.4%;
+    padding-left: 11%;
+  }
+  .zoom {
+    top: 22%;
+    z-index: 3;
+    position: fixed;
+  }
+}
+
+/* ++++++++++++++++++++++++++++++++++++++MOVIL++++++++++++++++++++++++++++++*/
+
+@media (max-width: 736px) {
+  .logo {
+    height: 30%;
+  }
+  .movil {
+    justify-content: center;
+    align-items: center;
+  }
+  .opciones_menu_ordenador:nth-child(1),
+  .opciones_menu_ordenador:nth-child(2),
+  .opciones_menu_ordenador:nth-child(3),
+  .opciones_menu_ordenador:nth-child(4),
+  .opciones_menu_ordenador:nth-child(5) {
+    height: calc(20% - 48px);
+    padding-top: 1%;
+  }
+  .cookie {
+    height: 30vh;
+    z-index: 2;
+    flex-direction: column;
+  }
+  .p {
+    margin-left: 5%;
+  }
+  #opcion {
+    display: none;
+  }
+  p,
+  ul,
+  li,
+  ol {
+    font-size: 12px;
+  }
+  .posicion {
+    position: relative;
+    top: 0%;
+  }
+  .opciones {
+    display: none;
+    top: 38%;
+    /*top: 211px;*/
+    height: 117vh;
+  }
+  .quienesSomos,
+  .queOfrecemos,
+  .contacto,
+  .galeria {
+    display: none;
+    width: 70%;
+    letter-spacing: 2px;
+    text-align: justify;
+    display: flex;
+    position: absolute;
+    top: 10%;
+    right: 15vw;
+  }
+  .queOfrecemos {
+    background-color: white;
+    padding-left: 17%;
+    padding-right: 13%;
+    left: 0%;
+  }
+  .galeria {
+    background-color: white;
+    padding-left: 12%;
+    padding-right: 16%;
+    left: 2%;
+    text-align: center;
+  }
+  .contacto {
+    background-color: white;
+    padding-left: 13%;
+    padding-right: 17%;
+    left: 0%;
+  }
+  input,
+  textarea {
+    background-color: rgba(255, 255, 255, 0.356);
+    width: 100%;
+    height: 3vh;
+    height: 50%;
+  }
+  .formularioContacto {
+    display: none;
+    height: 100%;
+    width: 100%;
+  }
+  .mapa {
+    display: none;
+    right: 105px;
+    top: 420px;
+    left: 13%;
+  }
+  iframe {
+    height: 30vh;
+    height: 91vh;
+  }
+  .contacto {
+    background-color: white;
+    padding-left: 13%;
+    padding-right: 17%;
+    left: 0%;
+    padding-bottom: 62%;
+  }
+  .box1 {
+    display: contents;
+  }
+  .box2 {
+    width: 93%;
+    margin-bottom: 7%;
+    padding-bottom: 3%;
+    margin-top: 10%;
+    margin-left: 3%;
+  }
+  .box3 {
+    padding-bottom: 6%;
+  }
+  .fotos_casas {
+    text-align: center;
+  }
+  /*****  INICIO FOTO GRANDE ****/
+  .zoom {
+    top: 0%;
+    background-color: rgba(24, 24, 24, 0.788);
+    position: absolute;
+    transition: 1s;
+    display: none;
+    animation-name: apertura;
+    animation-duration: 2s;
+    z-index: 3;
+    position: fixed;
+
+  }
+  .img_caja {
+    width: 70%;
+    height: 300px;
+    margin: 15% 0 0 17%;
+  }
+
+  .foto {
+    height: 100%;
+    object-fit: scale-down;
+    display: flex;
+    max-width: 100%;
+  }
+
+  /*****  FIN FOTO GRANDE ****/
+}
+
+@media (max-width: 414px) {
+
+  /*.opciones_menu_ordenador {
+    width: 35%;
+    padding: 2% 0 2% 0;
+    }
+  .movil {
+    top: 10%;
+    padding-bottom: 6%;
+    }
+  
+  .opciones_menu_ordenador {
+    width: 50%;
+    width: 35%;
+    padding: 2% 2% 2% 2%;
+  }
+  .movil {
+    top: 10%;
+    padding-bottom: 6%;
+  }*/
+
+  .opciones {
+    top: 33%;
+    height: 80vh;
+  }
+
+  iframe {
+    height: 28vh;
+  }
+  .titbox {
+    padding-bottom: 4%;
+  }
+  .mapa {
+    right: 0%;
+    left: 0%;
+    background-color: white;
+    padding-bottom: 4%;
+    padding-right: 15%;
+    padding-left: 13%;
+  }
+  .Polygon {
+    width: 150px !important;
+    height: 150px !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  #opcion {
+    display: none;
+  }
+  .txt {
+    font-size: 1em;
+    line-height: 1.2em;
+  }
+  .titulo {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 1600px) {
+  .fotos_casas {
+    text-align: center;
+    background-color: white;
+    padding-left: 11%;
+    padding-right: 7%;
+    margin-left: -24% !important;
+    margin-right: -22%;
+  }
+}
+
+/*________________________Apertura_________________________*/
+@keyframes apertura {
+  0% {
+    opacity: 0;
+    transform: scale(0.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/*__________________________________*/
+
+.Polygon {
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  height: 220px;
+  width: 220px;
+}
+
+.Polygon:hover {
+  opacity: 0.7;
+}
+
+.fotos_casas {
+  margin-top: 6%;
+  margin-left: 9%;
+}
